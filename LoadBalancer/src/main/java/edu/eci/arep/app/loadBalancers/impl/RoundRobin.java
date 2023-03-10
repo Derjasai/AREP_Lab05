@@ -15,9 +15,9 @@ public class RoundRobin implements LoadBalancer {
     private RoundRobin(){
         actual = 0;
         servers = new ArrayList<>();
-        servers.add("http://ec2-34-228-158-179.compute-1.amazonaws.com:42000");
-        servers.add("http://ec2-34-228-158-179.compute-1.amazonaws.com:42001");
-        servers.add("http://ec2-34-228-158-179.compute-1.amazonaws.com:42002");
+        servers.add("http://172.31.26.120:42000");
+        servers.add("http://172.31.26.120:42001");
+        servers.add("http://172.31.26.120:42002");
     }
 
     public static RoundRobin getInstance() {
